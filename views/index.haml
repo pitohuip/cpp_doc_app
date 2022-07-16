@@ -1,3 +1,43 @@
-%p= haml :navbar
-%h1.text-3xl.font-bold.underline
-  Index file!
+-# = haml :navbar
+
+%header.bg-night-200
+  %section.container.grid.grid-cols-2.justify-items-center.items-center.text-storm-200.mb-10.pt-10
+    %div
+      %h1 Современный учебник по C++
+      %p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique et expedita esse dolore sint ex unde eos in vel nisi.
+    %div
+      %img{:alt => "", :src => "./img/cpp-logo.svg"}/
+  %svg.fill-storm-100.block.bottom-n-1.overflow-hidden.relative{:viewbox => "0 0 1440 120", :xmlns => "http://www.w3.org/2000/svg"}
+    %path{:d => "M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"}
+%main.bg-storm-100
+  %section.text-night-400
+    .container.mb-20
+      %h2.mb-8 Доступные темы
+      .grid.grid-cols-5.gap-4.text-night-100
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} Классы
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} Объекты
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} ООП
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} Основы
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} Продвинутое
+        %a.bg-storm-400.p-10.rounded-lg.text-xl.font-bold.text-center.hover:bg-frost-100.transition-all{:href => ""} Базы данных
+    %svg.fill-night-400.block.bottom-n-1.overflow-hidden.relative{:viewbox => "0 0 1920 240", :xmlns => "http://www.w3.org/2000/svg"}
+      %path{:d => "M0 0c62.028 23.301 207.726 31.062 355.345 10.956 194.93-26.548 329.274 58.551 412.36 95.275 113.991 50.379 161.026 36.177 242.491 47.604 81.464 11.428 80.28 30.32 167.409 35.339 99.802 5.746 258.527-51.115 385.457-10.565 156.954 50.136 300.814-6.06 356.938 1.225V240H0V0z"}
+  %section.bg-night-400.text-storm-200.pt-20
+    .container
+      %h2.mb-8 Свяжитесь с разработчиком
+      %form#contact-form{:action => ""}
+        %label{:for => ""}
+          %span.text-lg Email*
+          %input{:placeholder => "you@example.com", :type => "text"}/
+        %label{:for => ""}
+          %span.text-lg Name*
+          %input{:placeholder => "Евгений Ефименко", :type => "text"}/
+        %label{:for => ""}
+          %span.text-lg Опишите проблему
+          %textarea{:cols => "50", :placeholder => "На сайте полностью не раскрыта тема ООП", :rows => "10"}
+        %button.border-2.border-transparent.transition-all Отправить
+    %svg.fill-night-400{:viewbox => "0 0 1920 250", :xmlns => "http://www.w3.org/2000/svg"}
+      %path.fill-night-00{:d => "M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 362.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239"}
+      %path.fill-aurora-400{:d => "M1920 144s-467.917 116.857-1027.243-17.294C369.986 1.322 0 45.578 0 45.578V250h1920V144z"}
+      %path.fill-storm-300{:d => "M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z"}
+%footer.bg-storm-300.text-night-200
