@@ -93,7 +93,7 @@ li a {
 
 /* PAGE STYLES HERE */
 
-#pagehere h1, h2, h3, h4, h5, h6{
+#pagehere h1, #pagehere h2, #pagehere h3, #pagehere h4, #pagehere h5, #pagehere h6{
 	@apply bg-night-300 font-sans rounded px-6 py-2 text-frost-100 mb-4;
 }
 
@@ -110,4 +110,12 @@ li a {
 }
 #pagehere code {
 	@apply bg-night-100 px-4 py-2 block rounded my-2;
+}
+
+#pagehere ul {
+	@apply list-disc m-4;
+}
+
+#pagehere ul li {
+	@apply list-item my-4;
 }
