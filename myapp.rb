@@ -8,6 +8,6 @@ get '/navigation' do
   haml :'navigation/cpp'
 end
 
-get '/test' do
+get '/navigation/vars' do
   markdown :'pages/variables', :layout_engine => :haml, :layout => :layout
 end

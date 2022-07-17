@@ -5,7 +5,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
     %title Title here
-    %link{:href => "css/output.css", :rel => "stylesheet"}/
+    %link{:href => "/css/output.css", :rel => "stylesheet"}/
     / fonts
     %link{:href => "https://fonts.googleapis.com", :rel => "preconnect"}/
     %link{:crossorigin => "", :href => "https://fonts.gstatic.com", :rel => "preconnect"}/
@@ -14,5 +14,5 @@
     = haml :navbar
     = yield
     = haml :footer
-    %script{:src => "js/jquery-3.6.0.min.js"}
-    %script{:src => "js/navbar.js"}
+    %script{:src => "/js/jquery-3.6.0.min.js"}
+    %script{:src => "/js/navbar.js"}
