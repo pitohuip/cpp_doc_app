@@ -119,3 +119,17 @@ li a {
 #pagehere ul li {
 	@apply list-item my-4;
 }
+
+/* ABOUT PAGE */
+
+#about h2 {
+	@apply my-4 text-storm-300 text-center mb-8;
+}
+
+#about h3 {
+	@apply text-2xl;
+}
+
+.grid-cols-2-auto {
+	grid-template-columns: repeat(2, auto);
+}

@@ -1,0 +1,73 @@
+%main.bg-night-500.text-storm-100#about
+  .container
+    %section.py-28
+      %h1.text-center.mb-6 О проекте
+      .flex.justify-center
+        %p.text-center.text-lg.max-w-4xl Сайт был разработан в качестве проекта во время прохождения учебной практики. Во время разработки были использованы передовые технологии.
+
+  .bg-night-300
+    %svg.fill-night-300.bg-night-500{:viewbox => "0 0 1440 94", :xmlns => "http://www.w3.org/2000/svg"}
+      %path{:d => "M0 .91c37.102-3.789 72.529 8.207 112.12 35.083 104.792 71.133 186.932 18.896 299.41-18.297 112.476-37.193 128.544 64.109 218.349 43.87 89.805-20.238 155.519-61.91 327.519-21.16s253.141 66.825 357.309 36.95c49.177-14.104 85.113-37.259 125.293-57.88V94H0V.91z"}
+    %section.container.pb-12
+      %h2 Что я использовал?
+      .grid.grid-cols-2.gap-6
+
+        .bg-night-400.rounded.p-6.drop-shadow-lg.grid.grid-cols-2-auto.gap-4
+          %img.w-28{:alt => "Логотип", :src => "/img/sinatra.png"}/
+          %div
+            %h3.mb-4.font-semibold Sinatra
+            %p Sinatra — свободный и открытый фреймворк, написанный на языке Ruby, предназначенный для разработки веб-приложений. Является альтернативой таким популярным фреймворкам на Ruby, как Ruby on Rails и Merb.
+
+        .bg-night-400.rounded.p-6.drop-shadow-lg.grid.grid-cols-2-auto.gap-4
+          %img.w-28{:alt => "Логотип", :src => "/img/tailwindcss.png"}/
+          %div
+            %h3.mb-4.font-semibold Tailwind CSS
+            %p Tailwind CSS — это CSS-фреймворк утилит для быстрого создания пользовательских интерфейсов.
+
+        .bg-night-400.rounded.p-6.drop-shadow-lg.grid.grid-cols-2-auto.gap-4
+          %img.w-28{:alt => "Логотип", :src => "/img/jquery.png"}/
+          %div
+            %h3.mb-4.font-semibold jQuery
+            %p jQuery  — набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML.
+
+        .bg-night-400.rounded.p-6.drop-shadow-lg.grid.grid-cols-2-auto.gap-4
+          %img.w-28{:alt => "Логотип", :src => "/img/haml.png"}/
+          %div
+            %h3.mb-4.font-semibold Haml
+            %p Haml (HTML abstraction markup language) — язык разметки для упрощённой генерации HTML. HAML компилируется в HTML.
+
+    %svg.fill-night-500.block.bottom-n-1.overflow-hidden.relative{:viewbox => "0 0 1920 240", :xmlns => "http://www.w3.org/2000/svg"}
+      %path{:d => "M0 0c62.028 23.301 207.726 31.062 355.345 10.956 194.93-26.548 329.274 58.551 412.36 95.275 113.991 50.379 161.026 36.177 242.491 47.604 81.464 11.428 80.28 30.32 167.409 35.339 99.802 5.746 258.527-51.115 385.457-10.565 156.954 50.136 300.814-6.06 356.938 1.225V240H0V0z"}
+  %section.container
+    %h2
+      Древовидная структура проекта
+    %pre
+      %code
+        ├── myapp.rb
+        ├── package.json
+        ├── package-lock.json
+        ├── public
+        │   ├── css
+        │   │   └── output.css
+        │   └── js
+        │       ├── jquery-3.6.0.min.js
+        │       └── navbar.js
+        ├── README.md
+        ├── src
+        │   └── input.css
+        ├── tailwind.config.js
+        └── views
+        ├── about_site.haml
+        ├── contact_me.haml
+        ├── footer.haml
+        ├── index.haml
+        ├── layout.haml
+        ├── layout_md.haml
+        ├── navbar.haml
+        ├── navigation
+        │   ├── cpp.haml
+        │   └── qt.haml
+        └── pages
+        ├── data_types.md
+        ├── type_conversions.md
+        └── variables.md

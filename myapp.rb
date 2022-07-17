@@ -4,6 +4,10 @@ get '/' do
   haml :index
 end
 
+get '/about_site' do
+  haml :about_site
+end
+
 get '/navigation' do
   haml :'navigation/cpp'
 end
