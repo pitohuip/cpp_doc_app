@@ -9,5 +9,5 @@ get '/navigation' do
 end
 
 get '/navigation/vars' do
-  markdown :'pages/variables', :layout_engine => :haml, :layout => :layout
+  markdown :'pages/variables', :layout_engine => :haml, :layout => :layout_md
 end

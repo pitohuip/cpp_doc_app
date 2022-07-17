@@ -89,3 +89,25 @@ ul li {
 li a {
 	@apply p-2 hover:bg-night-300 block rounded;
 }
+
+
+/* PAGE STYLES HERE */
+
+#pagehere h1, h2, h3, h4, h5, h6{
+	@apply bg-night-300 font-sans rounded px-6 py-2 text-frost-100 mb-4;
+}
+
+#pagehere h1 {
+	@apply text-3xl;
+}
+
+#pagehere h2 {
+	@apply text-2xl;
+}
+
+#pagehere p {
+	@apply mb-3;
+}
+#pagehere code {
+	@apply bg-night-100 px-4 py-2 block rounded my-2;
+}
