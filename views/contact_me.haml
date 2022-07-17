@@ -1,0 +1,22 @@
+.container
+  .bg-night-100.shadow.rounded.p-8.my-12
+    %p.text-3xl.font-bold.leading-7.text-center.text-white Свяжитесь со мной
+    %form{:action => "", :method => "post"}
+      .md:flex.items-center.mt-12.gap-8
+        .w-full.flex.flex-col{:class => "md:w-1/2"}
+          %label.font-semibold.text-storm-300 Как к вам обращаться?
+          %input.leading-none.text-storm-300.p-3.mt-4.bg-gray-800.rounded{:type => "text"}/
+        .w-full.flex.flex-col{:class => "md:w-1/2"}
+          %label.font-semibold.text-storm-300 Электронная почта
+          %input.leading-none.text-storm-300.p-3.mt-4.bg-gray-800.rounded{:type => "email"}/
+      .md:flex.items-center.mt-8
+        .w-full.flex.flex-col
+          %label.font-semibold.leading-none.text-storm-300 Тема письма
+          %input.text-storm-300.p-3.mt-4.bg-gray-800.rounded{:type => "text"}/
+      %div
+        .w-full.flex.flex-col.mt-8
+          %label.font-semibold.leading-none.text-storm-300 Сообщение
+          %textarea.h-64.text-base.text-gray-50.p-3.mt-4.bg-gray-800.rounded{:type => "text"}
+      .flex.items-center.justify-center.w-full
+        %button.mt-9.font-semibold.text-storm-200.py-4.px-6.bg-frost-400.rounded.hover:bg-frost-300
+          Отправить
