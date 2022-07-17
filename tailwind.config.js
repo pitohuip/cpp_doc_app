@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./views/*.{haml, html, js}",
-            "./public/js/*.js"],
+            "./public/js/*.js",
+            "./views/navigation/*.haml"
+           ],
   theme: {
     extend: {
       colors: {
@@ -10,6 +12,7 @@ module.exports = {
           200: '#434c5e',
           300: '#3b4252',
           400: '#2e3440',
+          500: '#242933',
         },
         storm: {
           100: '#f8f9fb',

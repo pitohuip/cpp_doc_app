@@ -69,3 +69,23 @@ form textarea, form input, form button {
 form button {
 	@apply hover:border-white;
 }
+
+ul li {
+	display: inline-block;
+}
+
+#wavefooter1 {
+	fill: rgb(55, 61, 76);
+}
+
+#wavefooter2 {
+	fill: rgb(57, 64, 79);
+}
+
+#wavefooter3 {
+	fill: rgb(59, 66, 82);
+}
+
+li a {
+	@apply p-2 hover:bg-night-300 block rounded;
+}
